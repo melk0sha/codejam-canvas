@@ -2,9 +2,50 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeJam - Canvas</title>
+    <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
+    <div class="wrapper">
+        <header>
+            <img src="assets/icons/menu.svg" alt="Menu">
+            <h1>CodeJam - Pallete</h1>
+            <img src="assets/icons/additional.svg" alt="Additional">
+        </header>
+        <main>
+            <div class="menu">
+                <ul class="tools">
+                    <li><img src="assets/icons/paint-bucket.svg">Paint bucket</li>
+                    <li><img src="assets/icons/choose-color.svg">Choose color</li>
+                    <li><img src="assets/icons/move.svg">Move</li>
+                    <li><img src="assets/icons/transform.svg">Transform</li>
+                </ul>
+                <ul class="change-color">
+                    <li><img src="assets/icons/current-color.svg">Current color</li>
+                    <li><img src="assets/icons/prev-color.svg">Prev color</li>
+                    <li><img src="assets/icons/red.svg">red</li>
+                    <li><img src="assets/icons/blue.svg">blue</li>
+                </ul>
+            </div>
+            <canvas height='512' width='512' id='frame'>Обновите браузер</canvas>
+            <div class="switch">
+                <label class="container">4x4
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">32x32
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Image
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </main>
+    </div>
 
+    <script src="scripts/script.js"></script>
 </body>
 </html>
